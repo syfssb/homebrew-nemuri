@@ -7,8 +7,8 @@
 # DMG 已装订公证票，字节已定稿，重构建会改变 sha256 导致 `brew install` 校验失败。
 # 若确需换 DMG：重跑 `shasum -a 256` 并同步改本行。步骤见 docs/RELEASING.md。
 cask "nemuri" do
-  version "1.1.1"
-  sha256 "3096c8f4b496f638e63c3f222cd1d88ec1ee2139107ad6ddf8b40fa0722d60b7"
+  version "1.1.2"
+  sha256 "e30f0e9072e3c46f838635588db1c768b2ba66e54484a9e5daace5c0314f3ee1"
 
   # 私有仓的 release 资源公众拉不到——发布前仓库必须转公开（PLAN §8 硬依赖）
   url "https://github.com/syfssb/nemuri/releases/download/v#{version}/Nemuri-#{version}.dmg"
